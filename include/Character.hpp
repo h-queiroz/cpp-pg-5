@@ -11,6 +11,7 @@ class Character {
     public:
         Character(std::string name, int health); // Constructor
         virtual void printStats();
+        virtual ~Character() {}; // Destructor
 };
 
 #endif // CHARACTER_HPP
