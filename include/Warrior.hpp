@@ -9,7 +9,7 @@ class Warrior : public Character {
 
     public:
         Warrior(std::string name, int health, int strength); // Constructor
-        void printStats();
+        void printStats() override;
 };
 
 #endif // !WARRIOR

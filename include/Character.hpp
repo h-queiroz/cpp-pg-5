@@ -10,7 +10,7 @@ class Character {
 
     public:
         Character(std::string name, int health); // Constructor
-        void printStats();
+        virtual void printStats();
 };
 
 #endif // CHARACTER_HPP

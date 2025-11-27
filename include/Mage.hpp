@@ -9,7 +9,7 @@ class Mage : public Character {
 
     public:
         Mage(std::string name, int health, int mana); // Constructor
-        void printStats();
+        void printStats() override;
 };
 
 #endif // !MAGE
