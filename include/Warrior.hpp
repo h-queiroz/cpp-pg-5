@@ -10,6 +10,8 @@ class Warrior : public Character {
     public:
         Warrior(std::string name, int health, int strength); // Constructor
         void printStats() override;
+        std::string printCharacter() override;
+        std::string getType() override; // Pure virtual function. It turns the Character class abstract
 };
 
 #endif // !WARRIOR

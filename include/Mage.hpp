@@ -10,6 +10,8 @@ class Mage : public Character {
     public:
         Mage(std::string name, int health, int mana); // Constructor
         void printStats() override;
+        std::string printCharacter() override;
+        std::string getType() override;
 };
 
 #endif // !MAGE

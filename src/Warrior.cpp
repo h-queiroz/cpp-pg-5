@@ -9,4 +9,10 @@ void Warrior::printStats() {
     std::cout << "Name: " << m_name << std::endl;
     std::cout << "Health: " << m_health << std::endl;
     std::cout << "Strength: " << m_strength << "\n\n";
+}
+
+std::string Warrior::printCharacter() {
+    return (getType() + ' ' + m_name + ' ' + std::to_string(m_health) + ' ' + std::to_string(m_strength) + '\n');
 };
+
+std::string Warrior::getType() { return "Warrior"; };

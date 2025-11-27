@@ -10,3 +10,9 @@ void Mage::printStats() {
     std::cout << "Health: " << m_health << std::endl;
     std::cout << "Mana: " << m_mana << "\n\n";
 };
+
+std::string Mage::printCharacter() {
+    return (getType() + ' ' + m_name + ' ' + std::to_string(m_health) + ' ' + std::to_string(m_mana) + '\n');
+};
+
+std::string Mage::getType() { return "Mage"; };
